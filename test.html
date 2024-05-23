@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="test.css" />
+    <style>
+      header {
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Inter";
+  padding: 0 2em;
+  height: 4.4rem;
+  background-color: #040404;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.22);
+  text-transform: uppercase;
+  height: 12vh;
+}
+
+header .cart {
+  cursor: pointer;
+  color: white;
+}
+
+nav ul {
+  font-family: sans-serif;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 2.5em;
+}
+
+nav ul li:nth-child(5),
+nav ul li:nth-child(6),
+nav ul li:nth-child(1) {
+  cursor: pointer;
+}
+
+nav .profile-icon div {
+  width: 2.4em;
+  height: 2.4em;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 0 0.1em #6103d9;
+}
+
+nav .profile-icon img {
+  width: 1.8em;
+  height: 1.8em;
+}
+
+nav .homebtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.4em;
+  height: 2.4em;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0.1em #6103d9;
+}
+
+nav img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fcdcff;
+}
+
+nav li {
+  list-style: none;
+  cursor: pointer;
+}
+
+nav li:nth-child(2),
+nav li:nth-child(3),
+nav li:nth-child(4) {
+  border-bottom: 3px solid #6103d9;
+  transition: transform 0.1s ease-in-out;
+}
+
+nav li:nth-child(3),
+nav li:nth-child(4) {
+  color: white;
+}
+
+nav li:nth-child(2):hover,
+nav li:nth-child(3):hover,
+nav li:nth-child(4):hover {
+  transform: translateY(-0.14em);
+}
+
+nav li div {
+  color: #fcdcff;
+}
+
+header span {
+  font-weight: 700;
+  font-size: 1.875rem;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.loginbtn {
+  padding: 0.4em 0.6em;
+  border-radius: 0.4em;
+  border: 2px solid #6103d9;
+  box-shadow: -9px 0 0 #6103d9;
+  position: relative;
+  transition: scale 0.2s ease-in-out;
+}
+
+.loginbtn:hover {
+  scale: 0.95;
+}
+
+.loginbtn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  background-color: #6103d9;
+  transition: width 0.2s ease-in-out;
+  z-index: -1;
+}
+
+.loginbtn:hover::before {
+  width: 100%;
+}
+    </style>
+  </head>
+  <body>
+    <header>
+      <span>LOGO</span>
+      <nav>
+        <ul>
+          <li class="homebtn">
+            <a href="#">
+              <img
+                src="svgs/9110875_home_icon.svg"
+              />
+            </a>
+          </li>
+          <li>
+          <a class="a" href="store.php">Store</a>
+          </li>
+          <li class="gotoContact" onclick="scrollToContact()">
+            Contact
+          </li>
+          <li onclick="scrollToAboutUs()">
+            About Us
+          </li>
+          <li>
+            <i style="color: white;" class="fa-solid fa-cart-shopping cartt"></i>
+          </li>
+
+              <div class="a loginbtn" onclick="openLoginForm()">Log In</div>
+
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>

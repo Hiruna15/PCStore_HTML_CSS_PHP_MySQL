@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.profileEditFormContainer {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  display: none;
+}
+
+.profileEditFormContainer .close {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.6rem;
+  cursor: pointer;
+}
+
+.profileEditFormContainer.show {
+  display: block;
+}
+
+.profileEditForm label,
+.profileEditForm input {
+  display: block;
+}
+
+.profileEditForm {
+  width: 386px;
+  height: 460px;
+  border-radius: 15px;
+  overflow: hidden;
+  font-family: "Roboto";
+  background-color: #171717;
+  border: 2px solid #2a2a2a;
+  margin: 100px auto;
+}
+
+.profileEditForm > div {
+  background-color: #0f0f0f;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 700;
+  color: white;
+  padding: 0 25px;
+}
+
+.profileEditForm > div div {
+  background-color: #000000;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profileEditForm > div img {
+  width: 20px;
+  height: 20px;
+}
+
+.pro-image div {
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  border: 4px solid #ffffff;
+  margin: 20px auto 25px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.pro-image img {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  object-fit: cover;
+  opacity: 0.6;
+}
+
+.pro-image .camera {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  opacity: 1;
+}
+
+.username {
+  outline: none;
+  border: 2px solid #ffffff;
+  font-size: 1.1rem;
+  padding: 12px 10px;
+  width: 308px;
+  border-radius: 10px;
+  margin: 0 auto;
+  background-color: transparent;
+}
+
+.editProfileSubmit {
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 700;
+  width: 220px;
+  padding: 10px;
+  border-radius: 19.5px;
+  margin: 60px auto 0 auto;
+  color: white;
+  background-color: #7000ff;
+  box-shadow: 4px 4px 25px #000000;
+}
+
+.profileEditForm form {
+  padding: 40px 40px;
+}
+
+.profileEditForm form label {
+  margin-bottom: 10px;
+  /* font-weight: 700; */
+  color: white;
+}
