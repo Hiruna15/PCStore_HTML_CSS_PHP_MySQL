@@ -1,0 +1,3 @@
+- This project is designed to run on a local server using Xampp
+- MySQL database = computer_store.zip
+- First run the homepage.php file
